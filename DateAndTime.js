@@ -15,3 +15,23 @@ function createcalendarform() {
 </div>
 </form>';
 }
+
+function createtable($data, $columns, $align, $tablewidth, $tableclass) {
+    $table = new stdClass;
+    $table->data = $data;
+    $table->align = $align;
+    $table->size = $columns;
+    $table->width = $tablewidth;
+    $table->class = $tableclass;
+    return print_table($table, true);
+}
+
+function createarray($data, $columns, $align, $tablewidth, $tableclass) {
+    $table = new stdClass;
+    $table->data = $data;
+    $table->align = $align;
+    $table->size = $columns;
+    $table->width = $tablewidth;
+    $table->class = $tableclass;
+    return print_table($table, true);
+}
