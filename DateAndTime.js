@@ -35,3 +35,6 @@ function createarray($data, $columns, $align, $tablewidth, $tableclass) {
     $table->class = $tableclass;
     return print_table($table, true);
 }
+
+
+
