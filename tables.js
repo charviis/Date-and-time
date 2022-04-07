@@ -1,4 +1,4 @@
-function createtable
+function createtable()
 {
     var table = document.createElement("table");
     table.setAttribute("id", "table");
@@ -12,57 +12,58 @@ function createtable
     return table;
 }
 
-function createheader
+function createheader()
 {
-    var header = document.createElement("th");
+    var header = document.createElement("thead");
     header.setAttribute("id", "header");
-    header.setAttribute("align", "center");
-    header.setAttribute("width", "100%");
-    header.setAttribute("height", "100%");
     header.setAttribute("class", "header");
     return header;
 }
 
-function createcell
+function createheaderrow()
 {
-    var cell = document.createElement("td");
-    cell.setAttribute("id", "cell");
-    cell.setAttribute("align", "center");
-    cell.setAttribute("width", "100%");
-    cell.setAttribute("height", "100%");
-    cell.setAttribute("class", "cell");
-    return cell;
+    var headerrow = document.createElement("tr");
+    headerrow.setAttribute("id", "headerrow");
+    headerrow.setAttribute("class", "headerrow");
+    return headerrow;
 }
 
-function createbutton
+function createheadercell()
 {
-    var button = document.createElement("button");
-    button.setAttribute("id", "button");
-    button.setAttribute("align", "center");
-    button.setAttribute("width", "100%");
-    button.setAttribute("height", "100%");
-    button.setAttribute("class", "button");
-    return button;
+    var headercell = document.createElement("th");
+    headercell.setAttribute("id", "headercell");
+    headercell.setAttribute("class", "headercell");
+    return headercell;
 }
 
-function createinput
+function createbody()
 {
-    var input = document.createElement("input");
-    input.setAttribute("id", "input");
-    input.setAttribute("align", "center");
-    input.setAttribute("width", "100%");
-    input.setAttribute("height", "100%");
-    input.setAttribute("class", "input");
-    return input;
+    var body = document.createElement("tbody");
+    body.setAttribute("id", "body");
+    body.setAttribute("class", "body");
+    return body;
 }
 
-function createlabel
+function createbodyrow()
 {
-    var label = document.createElement("label");
-    label.setAttribute("id", "label");
-    label.setAttribute("align", "center");
-    label.setAttribute("width", "100%");
-    label.setAttribute("height", "100%");
-    label.setAttribute("class", "label");
-    return label;
+    var bodyrow = document.createElement("tr");
+    bodyrow.setAttribute("id", "bodyrow");
+    bodyrow.setAttribute("class", "bodyrow");
+    return bodyrow;
+}
+
+function createbodycell()
+{
+    var bodycell = document.createElement("td");
+    bodycell.setAttribute("id", "bodycell");
+    bodycell.setAttribute("class", "bodycell");
+    return bodycell;
+}
+
+function createfooter()
+{
+    var footer = document.createElement("tfoot");
+    footer.setAttribute("id", "footer");
+    footer.setAttribute("class", "footer");
+    return footer;
 }
